@@ -64,24 +64,4 @@ void loop(){
                                minimoPWM[motor],maximoPWM[motor]));
     }
   }
-
-  angulo[5] = 30;
-  delay(1500);
-
-  for(int motor = 0; motor<12;motor++){
-    if(invertido[motor]==0){
-      pwm.setPWM(motor, 0, map(angulo[motor] + desvio[motor],
-                               0,maximoANGULO[motor],
-                               minimoPWM[motor],maximoPWM[motor]));
-    }
-    else{
-      pwm.setPWM(motor, 0, map(180 - angulo[motor] + desvio[motor],
-                               0,maximoANGULO[motor],
-                               minimoPWM[motor],maximoPWM[motor]));
-    }
-  }
-
-  angulo[5] = 150;
-  delay(1500);
-  
 }
