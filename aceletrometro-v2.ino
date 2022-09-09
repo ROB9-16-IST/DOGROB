@@ -34,5 +34,5 @@ void loop() {
   Serial.print("Roll= ");
   Serial.print(roll);
   Serial.print("     Pitch= ");
-  Serial.print(pitch);
+  Serial.println(pitch);
 }
