@@ -2,7 +2,7 @@
 
 int ADXL345 = 0x53;
 
-float X, Y, Z;  
+float X, Y, Z, roll, pitch;  
 
 void setup() {
   Serial.begin(9600); 
